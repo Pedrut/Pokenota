@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teste feito para a Barbara testar</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Oiii Barbaraaaa</h1>
+
+<div class="card">
+<h3>Adicionar Aluno</h3>
+<input id="matricula" placeholder="Matrícula">
+<input id="nome" placeholder="Nome">
+<select id="pokemonSelect"></select>
+<input id="nota" type="number" placeholder="Nota">
+<button onclick="addAluno()">Adicionar</button>
+</div>
+
+<div class="card">
+<h3>Aluno Atual</h3>
+<p id="alunoAtual">Nenhum</p>
+<img id="pokemonImg">
+<p id="pontos"></p>
+<input id="novaNota" type="number" placeholder="Nova nota">
+<button onclick="addNota()">Adicionar Nota</button>
+</div>
+
+<div class="card">
+<h3>Ranking Geral</h3>
+<table>
+<thead>
+<tr>
+<th>Matrícula</th>
+<th>Nome</th>
+<th>Pokémon</th>
+<th>Notas</th>
+<th>Pontos</th>
+<th>Nível</th>
+</tr>
+</thead>
+<tbody id="ranking"></tbody>
+</table>
+</div>
+
+<div class="card">
+<h3>Ranking por Tipo</h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Pontos Totais</th>
+</tr>
+</thead>
+<tbody id="rankingTipo"></tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
